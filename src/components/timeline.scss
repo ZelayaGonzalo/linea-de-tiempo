@@ -6,7 +6,7 @@ $green:#739680;
 .timeline-bar{
     display: flex;
     bottom: 0;
-    height: 80px;
+    height: 60px;
     width: auto;
     align-items: center;
     .timeline-year{
@@ -15,7 +15,7 @@ $green:#739680;
         justify-content: center;
         min-width: $yearWidth;
         height: 100%;
-        line-height: 80px;
+        line-height: 60px;
         background-color: #77552f;
         color: white;
         border-right: 2px white solid;
@@ -31,52 +31,77 @@ $green:#739680;
     height: 100%;
 }
 .card{
+    padding: 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 0;
     font-size: 20px;
     background-color: white;
     text-transform: uppercase;
-    .card-border{
-        position: absolute;
-        height: 100%;
-        width: 20px;
-        background-color: $green;
-        top: 0;
-        left: 0;
-        z-index: 10000;
-    }
+    border-left: 20px $green solid;
+    border-bottom: 2px solid black;
     .card-title{
         text-align: center;
+
     }
     .card-body{
         text-transform: initial;
         position: absolute;
         background-color: white;
         font-size: 0px;
-        width: 500px;
-        top: 90%;
-        left: 80%;
-        visibility: visible;
-        padding: 20px;
+        height: 80vh;
+        width: 60vw;
+        left: 20vw;
+        top: 10vh;
+        padding: 30px;
         border-radius: 10px;
         visibility: hidden;
         transition: 0.3s;
+        overflow-y: auto;
+        z-index: 5;
+        -webkit-box-shadow: 0px 0px 15px 10px #000000; 
+        box-shadow: 0px 0px 15px 10px #000000;
+        .body-title{
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        .close-body{
+            width: 100%;
+            text-align: right;
+            font-weight: bolder;
+            font-size: 30px;
+            color: #a04370;
+        }
+    }
+    .show-body{
+        font-size: 20px;
+        visibility: visible;
     }
     .show{
         visibility: visible;
     }
     &:hover{
-        .card-body{
-            font-size: 15px;
+        background-color: rgb(131, 131, 131);
+        cursor: pointer;
+        /*.card-body{
+            font-size: 20px;
             visibility: visible;
             z-index: 2;
             -webkit-box-shadow: 0px 0px 15px 10px #000000; 
             box-shadow: 0px 0px 15px 10px #000000;
-        }
+        }*/
+    }
+}
+.noshow{
+    visibility: hidden;
+}
+
+@media (max-width:500px){
+    .card .card-body{
+        width: 90vw;
+        left: 5vw;
     }
 }

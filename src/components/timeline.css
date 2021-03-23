@@ -5,7 +5,7 @@
 .timeline-bar {
   display: flex;
   bottom: 0;
-  height: 80px;
+  height: 60px;
   width: auto;
   align-items: center;
 }
@@ -15,7 +15,7 @@
   justify-content: center;
   min-width: 350px;
   height: 100%;
-  line-height: 80px;
+  line-height: 60px;
   background-color: #77552f;
   color: white;
   border-right: 2px white solid;
@@ -33,25 +33,17 @@
 }
 
 .card {
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 100%;
   height: auto;
-  padding: 50px 0;
   font-size: 20px;
   background-color: white;
   text-transform: uppercase;
-}
-.card .card-border {
-  position: absolute;
-  height: 100%;
-  width: 20px;
-  background-color: #739680;
-  top: 0;
-  left: 0;
-  z-index: 10000;
+  border-left: 20px #739680 solid;
+  border-bottom: 2px solid black;
 }
 .card .card-title {
   text-align: center;
@@ -61,24 +53,58 @@
   position: absolute;
   background-color: white;
   font-size: 0px;
-  width: 500px;
-  top: 90%;
-  left: 80%;
-  visibility: visible;
-  padding: 20px;
+  height: 80vh;
+  width: 60vw;
+  left: 20vw;
+  top: 10vh;
+  padding: 30px;
   border-radius: 10px;
   visibility: hidden;
   transition: 0.3s;
+  overflow-y: auto;
+  z-index: 5;
+  -webkit-box-shadow: 0px 0px 15px 10px #000000;
+  box-shadow: 0px 0px 15px 10px #000000;
+}
+.card .card-body .body-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .card-body .close-body {
+  width: 100%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #a04370;
+}
+.card .show-body {
+  font-size: 20px;
+  visibility: visible;
 }
 .card .show {
   visibility: visible;
 }
-.card:hover .card-body {
-  font-size: 15px;
-  visibility: visible;
-  z-index: 2;
-  -webkit-box-shadow: 0px 0px 15px 10px #000000;
-  box-shadow: 0px 0px 15px 10px #000000;
+.card:hover {
+  background-color: #838383;
+  cursor: pointer;
+  /*.card-body{
+      font-size: 20px;
+      visibility: visible;
+      z-index: 2;
+      -webkit-box-shadow: 0px 0px 15px 10px #000000; 
+      box-shadow: 0px 0px 15px 10px #000000;
+  }*/
+}
+
+.noshow {
+  visibility: hidden;
+}
+
+@media (max-width: 500px) {
+  .card .card-body {
+    width: 90vw;
+    left: 5vw;
+  }
 }
 
 /*# sourceMappingURL=timeline.css.map */

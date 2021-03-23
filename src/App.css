@@ -4,3 +4,11 @@
     overflow-y:hidden ;
     background-color: rgba(0, 0, 0, 0.623);
 }
+.firma{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
