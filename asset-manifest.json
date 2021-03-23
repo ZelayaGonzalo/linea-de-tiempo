@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/linea-de-tiempo/static/css/main.40b457b0.chunk.css",
+    "main.js": "/linea-de-tiempo/static/js/main.572b93d1.chunk.js",
+    "main.js.map": "/linea-de-tiempo/static/js/main.572b93d1.chunk.js.map",
+    "runtime-main.js": "/linea-de-tiempo/static/js/runtime-main.a75de1ae.js",
+    "runtime-main.js.map": "/linea-de-tiempo/static/js/runtime-main.a75de1ae.js.map",
+    "static/js/2.1a68d56e.chunk.js": "/linea-de-tiempo/static/js/2.1a68d56e.chunk.js",
+    "static/js/2.1a68d56e.chunk.js.map": "/linea-de-tiempo/static/js/2.1a68d56e.chunk.js.map",
+    "index.html": "/linea-de-tiempo/index.html",
+    "static/css/main.40b457b0.chunk.css.map": "/linea-de-tiempo/static/css/main.40b457b0.chunk.css.map",
+    "static/js/2.1a68d56e.chunk.js.LICENSE.txt": "/linea-de-tiempo/static/js/2.1a68d56e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/linea-de-tiempo/static/media/juicio21_630_1140.09d2285a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a75de1ae.js",
+    "static/js/2.1a68d56e.chunk.js",
+    "static/css/main.40b457b0.chunk.css",
+    "static/js/main.572b93d1.chunk.js"
+  ]
+}
