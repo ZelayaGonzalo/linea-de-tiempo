@@ -259,8 +259,8 @@ const data=[
     [
         {
         year:2004,
-        title:"",
-        body:"",
+        title:"Pelicula: LUNA DE AVELLANEDA",
+        body:'“Luna de Avellaneda” es un emblemático club barrial de Buenos Aires que vivió un período de esplendor en el pasado y que en la actualidad de la película se encuentra sumergido en una crisis que pone en tela de juicio la continuidad de su existencia. La película narra precisamente la realidad argentina tras la crisis financiera del 2001; en términos de Francis Fukuyama, la economía “no puede ser divorciada de la cultura ”, no puede ser comprendida desvinculada de las costumbres, la moral y los hábitos de la sociedad en que transcurre. Es así que el manejo político y social de la ética y la confianza que este país arrastró durante años (un aparato estatal gigantesco, corrupción, inestabilidad política, etc.), desembocó inevitablemente en el caos."',
     }],
     [
         {
